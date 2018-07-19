@@ -7,21 +7,23 @@
 <ion-content padding>
   <ion-grid>
     <ion-row>
-      <button ion-button block>สถานที่ท่องเที่ยว</button>
-    </ion-row>
-    <ion-row>
-      <button ion-button block (click)="goPageboard()">Board</button>
-    </ion-row>
-    <ion-row>
-      <button ion-button block>กระเป๋าเงิน</button>
+      <ion-col col-4>
+        <button ion-button block round>Travel</button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button block round (click)="goPageboard()">Board</button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button block round>Wallet</button>
+      </ion-col>
     </ion-row>
   </ion-grid>
 
   <div>
-    <ion-img width="280" height="80" src="../../src/assets/"></ion-img>
-    <ion-img width="280" height="80" src="../../src/assets/"></ion-img>
-    <ion-img width="280" height="80" src="../../src/assets/"></ion-img>
-    <ion-img width="280" height="80" src="../../src/assets/"></ion-img>
+    <ion-img width="300" height="80" src="../../assets/imgs/Sea.jpg"></ion-img>
+    <ion-img width="300" height="80" src="../../assets/imgs/River.jpg"></ion-img>
+    <ion-img width="300" height="80" src="../../src/assets/"></ion-img>
+    <ion-img width="300" height="80" src="../../src/assets/"></ion-img>
   </div>
   <button ion-button round full>Log Out</button>
 
