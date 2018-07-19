@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { HomePage } from '../home/home';
-import { TopupPage } from '../topup/topup';
+import { PaymentsuccessPage } from '../paymentsuccess/paymentsuccess';
 
 /**
- * Generated class for the IndexPage page.
+ * Generated class for the ConfirmPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -12,24 +11,19 @@ import { TopupPage } from '../topup/topup';
 
 @IonicPage()
 @Component({
-  selector: 'page-index',
-  templateUrl: 'index.html',
+  selector: 'page-confirm',
+  templateUrl: 'confirm.html',
 })
-export class IndexPage {
+export class ConfirmPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad IndexPage');
+    console.log('ionViewDidLoad ConfirmPage');
   }
-
-  goPageboard(){
-    this.navCtrl.push(HomePage);
+  goPaymentsuccess(){
+    this.navCtrl.push(PaymentsuccessPage);
   }
-  goTopup(){
-    this.navCtrl.push(TopupPage);
-  }
-  
 
 }

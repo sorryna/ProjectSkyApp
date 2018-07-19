@@ -9,6 +9,11 @@ import { HomePage } from '../pages/home/home';
 import { AddContentPage } from '../pages/add-content/add-content';
 import { ContentDetailPage } from '../pages/content-detail/content-detail';
 import { IndexPage } from '../pages/index';
+import { TopupPage } from '../pages/topup/topup';
+import { CreditinfoPage } from '../pages/creditinfo/creditinfo';
+import { PaymentPage } from '../pages/payment/payment';
+import { ConfirmPage } from '../pages/confirm/confirm';
+import { PaymentsuccessPage } from '../pages/paymentsuccess/paymentsuccess';
 
 @NgModule({
   declarations: [
@@ -16,7 +21,12 @@ import { IndexPage } from '../pages/index';
     HomePage,
     AddContentPage,
     ContentDetailPage,
-    IndexPage
+    IndexPage,
+    TopupPage,
+    CreditinfoPage,
+    PaymentPage,
+    ConfirmPage,
+    PaymentsuccessPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +38,12 @@ import { IndexPage } from '../pages/index';
     HomePage,
     AddContentPage,
     ContentDetailPage,
-    IndexPage
+    IndexPage,
+    TopupPage,
+    CreditinfoPage,
+    PaymentPage,
+    ConfirmPage,
+    PaymentsuccessPage
   ],
   providers: [
     StatusBar,
