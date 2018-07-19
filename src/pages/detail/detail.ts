@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
-import { TopupPage } from '../topup/topup';
-import { FilterPage } from '../filter/filter';
+import { MapPage } from '../map/map';
+import { GalleryPage } from '../gallery/gallery';
+
 /**
- * Generated class for the IndexPage page.
+ * Generated class for the DetailPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -12,28 +13,28 @@ import { FilterPage } from '../filter/filter';
 
 @IonicPage()
 @Component({
-  selector: 'page-index',
-  templateUrl: 'index.html',
+  selector: 'page-detail',
+  templateUrl: 'detail.html',
 })
-export class IndexPage {
+export class DetailPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad IndexPage');
+    console.log('ionViewDidLoad DetailPage');
   }
 
   goPageboard() {
     this.navCtrl.push(HomePage);
   }
-  
-  goTopup() {
-    this.navCtrl.push(TopupPage);
+
+  goPageMap() {
+    this.navCtrl.push(MapPage);
   }
 
-  goPageTravel() {
-    this.navCtrl.push(FilterPage);
+  goPageGallery() {
+    this.navCtrl.push(GalleryPage);
   }
 
 }

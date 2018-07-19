@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { DetailPage } from '../detail/detail';
 
 /**
- * Generated class for the PlacelistPage page.
+ * Generated class for the GalleryPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,19 +10,16 @@ import { DetailPage } from '../detail/detail';
 
 @IonicPage()
 @Component({
-  selector: 'page-placelist',
-  templateUrl: 'placelist.html',
+  selector: 'page-gallery',
+  templateUrl: 'gallery.html',
 })
-export class PlacelistPage {
+export class GalleryPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PlacelistPage');
+    console.log('ionViewDidLoad GalleryPage');
   }
 
-  goPageDetail() {
-    this.navCtrl.push(DetailPage);
-  }
 }

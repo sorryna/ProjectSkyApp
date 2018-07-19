@@ -16,6 +16,9 @@ import { ConfirmPage } from '../pages/confirm/confirm';
 import { PaymentsuccessPage } from '../pages/paymentsuccess/paymentsuccess';
 import { PlacelistPage } from '../pages/placelist/placelist';
 import { FilterPage } from '../pages/filter/filter';
+import { DetailPage } from '../pages/detail/detail';
+import { MapPage } from '../pages/map/map';
+import { GalleryPage } from '../pages/gallery/gallery';
 
 @NgModule({
   declarations: [
@@ -30,8 +33,11 @@ import { FilterPage } from '../pages/filter/filter';
     ConfirmPage,
     PaymentsuccessPage,
     PlacelistPage,
-    FilterPage
-
+    FilterPage,
+    DetailPage,
+    MapPage,
+    GalleryPage,
+    MapPage
   ],
   imports: [
     BrowserModule,
@@ -50,7 +56,11 @@ import { FilterPage } from '../pages/filter/filter';
     ConfirmPage,
     PaymentsuccessPage,
     PlacelistPage,
-    FilterPage
+    FilterPage,
+    DetailPage,
+    MapPage,
+    GalleryPage,
+    MapPage
   ],
   providers: [
     StatusBar,
