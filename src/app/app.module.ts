@@ -9,6 +9,11 @@ import { HomePage } from '../pages/home/home';
 import { AddContentPage } from '../pages/add-content/add-content';
 import { ContentDetailPage } from '../pages/content-detail/content-detail';
 import { IndexPage } from '../pages/index';
+import { TopupPage } from '../pages/topup/topup';
+import { CreditinfoPage } from '../pages/creditinfo/creditinfo';
+import { PaymentPage } from '../pages/payment/payment';
+import { ConfirmPage } from '../pages/confirm/confirm';
+import { PaymentsuccessPage } from '../pages/paymentsuccess/paymentsuccess';
 import { PlacelistPage } from '../pages/placelist/placelist';
 import { FilterPage } from '../pages/filter/filter';
 
@@ -19,8 +24,14 @@ import { FilterPage } from '../pages/filter/filter';
     AddContentPage,
     ContentDetailPage,
     IndexPage,
+    TopupPage,
+    CreditinfoPage,
+    PaymentPage,
+    ConfirmPage,
+    PaymentsuccessPage,
     PlacelistPage,
     FilterPage
+
   ],
   imports: [
     BrowserModule,
@@ -33,6 +44,11 @@ import { FilterPage } from '../pages/filter/filter';
     AddContentPage,
     ContentDetailPage,
     IndexPage,
+    TopupPage,
+    CreditinfoPage,
+    PaymentPage,
+    ConfirmPage,
+    PaymentsuccessPage,
     PlacelistPage,
     FilterPage
   ],

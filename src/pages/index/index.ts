@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
+import { TopupPage } from '../topup/topup';
 import { FilterPage } from '../filter/filter';
-
 /**
  * Generated class for the IndexPage page.
  *
@@ -27,6 +27,10 @@ export class IndexPage {
   goPageboard(){
     this.navCtrl.push(HomePage);
   }
+  goTopup(){
+    this.navCtrl.push(TopupPage);
+  }
+  
 
   goPageTravel(){
     this.navCtrl.push(FilterPage);

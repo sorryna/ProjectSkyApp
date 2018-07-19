@@ -14,16 +14,36 @@
         <button ion-button block round (click)="goPageboard()">Board</button>
       </ion-col>
       <ion-col col-4>
-        <button ion-button block round >Wallet</button>
+        <button ion-button block round (click)="goTopup()">Wallet</button>
       </ion-col>
     </ion-row>
   </ion-grid>
 
   <div>
-    <ion-img width="300" height="80" src="../../assets/imgs/Sea.jpg"></ion-img>
-    <ion-img width="300" height="80" src="../../assets/imgs/River.jpg"></ion-img>
-    <ion-img width="300" height="80" src="../../src/assets/"></ion-img>
-    <ion-img width="300" height="80" src="../../src/assets/"></ion-img>
+    <ion-grid>
+      <ion-row>
+        <ion-img width="300" height="80" src="../../assets/imgs/Sea.jpg"></ion-img>
+        <label style="position: absolute;margin-top: 5px;color: black">สถานที่ยอดฮิต</label>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-img width="300" height="80" src="../../assets/imgs/River.jpg"></ion-img>
+        <label style="position: absolute;margin-top: 5px;color: black">สถานที่ยอดฮิต</label>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-img width="300" height="80" src="../../assets/imgs/rice.jpg"></ion-img>
+        <label style="position: absolute;margin-top: 5px;color: wheat">สถานที่ยอดฮิต</label>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-img width="300" height="80" src="../../assets/imgs/mountain.jpg"></ion-img>
+        <label style="position: absolute;margin-top: 5px;color: wheat">สถานที่ยอดฮิต</label>
+      </ion-row>
+    </ion-grid>
   </div>
   <button ion-button round full>Log Out</button>
 
