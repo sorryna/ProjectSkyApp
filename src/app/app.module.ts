@@ -9,6 +9,8 @@ import { HomePage } from '../pages/home/home';
 import { AddContentPage } from '../pages/add-content/add-content';
 import { ContentDetailPage } from '../pages/content-detail/content-detail';
 import { IndexPage } from '../pages/index';
+import { PlacelistPage } from '../pages/placelist/placelist';
+import { FilterPage } from '../pages/filter/filter';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { IndexPage } from '../pages/index';
     HomePage,
     AddContentPage,
     ContentDetailPage,
-    IndexPage
+    IndexPage,
+    PlacelistPage,
+    FilterPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +32,9 @@ import { IndexPage } from '../pages/index';
     HomePage,
     AddContentPage,
     ContentDetailPage,
-    IndexPage
+    IndexPage,
+    PlacelistPage,
+    FilterPage
   ],
   providers: [
     StatusBar,

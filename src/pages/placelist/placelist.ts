@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { HomePage } from '../home/home';
-import { FilterPage } from '../filter/filter';
 
 /**
- * Generated class for the IndexPage page.
+ * Generated class for the PlacelistPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -12,24 +10,16 @@ import { FilterPage } from '../filter/filter';
 
 @IonicPage()
 @Component({
-  selector: 'page-index',
-  templateUrl: 'index.html',
+  selector: 'page-placelist',
+  templateUrl: 'placelist.html',
 })
-export class IndexPage {
+export class PlacelistPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad IndexPage');
-  }
-
-  goPageboard(){
-    this.navCtrl.push(HomePage);
-  }
-
-  goPageTravel(){
-    this.navCtrl.push(FilterPage);
+    console.log('ionViewDidLoad PlacelistPage');
   }
 
 }
