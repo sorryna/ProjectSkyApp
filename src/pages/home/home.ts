@@ -14,9 +14,9 @@ export class HomePage {
     
   }
   items = [
-    'Unseenขอนแก่นสุดCool',
-    'UnseenอุบลสุดCool',
-    'UnseenกรุงเทพสุดCool',
+    'สถานที่เที่ยวในขอนแก่นสุดCool',
+    'น่าเที่ยวในอุบล',
+    'กรุงเทพที่น่าไป',
   ];
 
   public itemSelected(item) {

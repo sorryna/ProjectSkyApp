@@ -11,56 +11,138 @@
   <h2>
     {{name}}
   </h2>
+
+
+
+
+  <!-- 
+
+<label *ngIf="name == 'สถานที่เที่ยวในขอนแก่นสุดCool'" ></label>
+ -->
+
   <div style="background-color: rgb(238, 238, 238)">
-    <label >
-      พระธาตุขามแก่น ตั้งอยู่ที่วัดเจติยภูมิ ต.บ้านขาม อ.น้ำพอง เป็นปูชยนียสถานที่สำคัญของจังหวัดขอนแก่น เป็นที่ยึดเหนี่ยวจิตใจของชาวเมือง
-      อีกทั้งมีความศักดิ์สิทธิ์คู่กับอีสานแห่งหนึ่งด้วย ใครมาเยือนก็ต้องไม่พลาดที่จะมากราบไหว้แห่งนี้
+    <label>
+      <label *ngIf=" name == 'สถานที่เที่ยวในขอนแก่นสุดCool'"> พระธาตุขามแก่น ตั้งอยู่ที่วัดเจติยภูมิ ต.บ้านขาม อ.น้ำพอง เป็นปูชยนียสถานที่สำคัญของจังหวัดขอนแก่น เป็นที่ยึดเหนี่ยวจิตใจของชาวเมือง
+        อีกทั้งมีความศักดิ์สิทธิ์คู่กับอีสานแห่งหนึ่งด้วย ใครมาเยือนก็ต้องไม่พลาดที่จะมากราบไหว้แห่งนี้ </label>
+      <label *ngIf=" name == 'น่าเที่ยวในอุบล'"> สถานที่ท่องเที่ยวในฝั่งริมแม่น้ำโขง ตำบลนาตาล อำเภอนาตาล โดย "หาดชมดาว" เป็นชื่อเรียกที่ชาวบ้านเรียกหาดทรายที่โผล่ขึ้นมากลางลำน้ำโขงในช่วงหน้าแล้ง
+        มีระยะทางประมาณ 2 กิโลเมตร ซึ่งชาวบ้านมักจะพากันมาเล่นน้ำเพื่อคลายร้อนและนั่งพักผ่อนหย่อนใจ โดยถัดไปจากหาดทรายอันกว้างใหญ่
+        ก็จะเป็นบริเวณของแก่งหินอันสวยงามกว้างประมาณ 200 ไร่ ชาวบ้านเรียกว่าแก่งหินงาม จะโผล่ขึ้นมาให้เห็นเฉพาะช่วงหน้าร้อนเท่านั้น
+        ซึ่งก้อนหินก็จะมีรูปทรงประหลาดสวยงาม มีริ้วและลวดลายอันเกิดจากการกัดเซาะของแม่น้ำโขงที่ยังคงคมชัด สดใหม่ มีทั้งแก่งหิน
+        อ่างน้ำเล็ก ๆ ลานหินกว้าง สลับกันไป ทำให้ที่นี่เป็น "มินิแกรนด์แคนยอน" ที่สมบูรณ์แบบที่สุดในเมืองไทย </label>
+      <label *ngIf=" name == 'กรุงเทพที่น่าไป'"> ตลาดนัดสวนจตุจักรนี่เอง มันเป็นสถานที่ที่คุณสามารถเดินเตร็ดเตร่เพื่อซึมซับบรรยากาศของร้านค้าและผู้คนมากมายได้อย่างมีอิสระ
+        ที่ที่คุณสามารถใช้ทักษะในการต่อราคาสินค้ากับพ่อค้าแม่ค้าที่ขายสินค้าหลากหลายชนิดอยู่ในตลาดนัดแห่งนี้กว่า 15,000 ชีวิต
+        </label>
+      <br>
     </label>
   </div>
 
- 
-    <ion-grid>
-      <ion-row>
-        <ion-col col-6 text-left>
-          <label>โพสเมื่อ 18/7/2018</label>
-        </ion-col>
-        <ion-col col-6 text-right>
-          <label>Viewer 1 | ถูกใจ 1</label>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-<hr>
-  <div>
-      <div style="background-color: rgb(238, 238, 238)"> 
-          <h3>คอมเม้น</h3>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6 text-left>
+        <label>โพสเมื่อ 18/7/2018</label>
+      </ion-col>
+      <ion-col col-6 text-right>
+        <label>Viewer 1 | ถูกใจ 1</label>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <hr>
+
+  <div *ngIf=" name == 'สถานที่เที่ยวในขอนแก่นสุดCool'">
+    <div>
+      <div style="background-color: rgb(238, 238, 238)">
+        <h3>สวยงามมากครับบบบบ!</h3>
       </div>
-    <ion-grid>
-      <ion-row>
-        <ion-col col-4 text-left>
-          <label>Username : xxx</label>
-        </ion-col>
-        <ion-col col-8 text-right>
-          <label>โพสเมื่อ 19/7/2018 | ถูกใจ 1</label>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-    
-  </div>
-  <div>
-      <div style="background-color: rgb(238, 238, 238)"> 
-          <h3>กากมาก</h3>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-4 text-left>
+            <label>Username : a1</label>
+          </ion-col>
+          <ion-col col-8 text-right>
+            <label>โพสเมื่อ 19/7/2018 | ถูกใจ 1</label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div>
+      <div style="background-color: rgb(238, 238, 238)">
+        <h3>ใช่หรอพี่</h3>
       </div>
-    <ion-grid>
-      <ion-row>
-        <ion-col col-4 text-left>
-          <label>Username : xxx</label>
-        </ion-col>
-        <ion-col col-8 text-right>
-          <label>โพสเมื่อ 19/7/2018 | ถูกใจ 1</label>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-    
+      <ion-grid>
+        <ion-row>
+          <ion-col col-4 text-left>
+            <label>Username : b1</label>
+          </ion-col>
+          <ion-col col-8 text-right>
+            <label>โพสเมื่อ 19/7/2018 | ถูกใจ 1</label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
   </div>
- 
+  <div *ngIf=" name == 'น่าเที่ยวในอุบล'">
+      <div>
+        <div style="background-color: rgb(238, 238, 238)">
+          <h3>น่าเที่ยวมากเลยครับบบ!</h3>
+        </div>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-4 text-left>
+              <label>Username : a1</label>
+            </ion-col>
+            <ion-col col-8 text-right>
+              <label>โพสเมื่อ 19/7/2018 | ถูกใจ 1</label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+      <div>
+        <div style="background-color: rgb(238, 238, 238)">
+          <h3>ทางไปมีแต่หลุม</h3>
+        </div>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-4 text-left>
+              <label>Username : b1</label>
+            </ion-col>
+            <ion-col col-8 text-right>
+              <label>โพสเมื่อ 19/7/2018 | ถูกใจ 1</label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </div>
+    <div *ngIf=" name == 'กรุงเทพที่น่าไป'">
+        <div>
+          <div style="background-color: rgb(238, 238, 238)">
+            <h3>มีที่เที่ยวเยอะมากเลยแต่ไปไม่ได้ไม่มีเงิน!</h3>
+          </div>
+          <ion-grid>
+            <ion-row>
+              <ion-col col-4 text-left>
+                <label>Username : a1</label>
+              </ion-col>
+              <ion-col col-8 text-right>
+                <label>โพสเมื่อ 19/7/2018 | ถูกใจ 1</label>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+        <div>
+          <div style="background-color: rgb(238, 238, 238)">
+            <h3>ห้างเยอะดี</h3>
+          </div>
+          <ion-grid>
+            <ion-row>
+              <ion-col col-4 text-left>
+                <label>Username : b1</label>
+              </ion-col>
+              <ion-col col-8 text-right>
+                <label>โพสเมื่อ 19/7/2018 | ถูกใจ 1</label>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
 </ion-content>
