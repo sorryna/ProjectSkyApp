@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ImageViewerController } from 'ionic-img-viewer';
 
 /**
  * Generated class for the GalleryPage page.
@@ -14,12 +15,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'gallery.html',
 })
 export class GalleryPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  _imageViewerCtrl: ImageViewerController;
+  constructor(public navCtrl: NavController, public navParams: NavParams, public imageViewerCtrl: ImageViewerController) {
+    this._imageViewerCtrl = imageViewerCtrl;
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad GalleryPage');
   }
+  presentImage(myImage) {
+    const imageViewer = this._imageViewerCtrl.create(myImage);
+    imageViewer.present();
 
+  }
 }
+
