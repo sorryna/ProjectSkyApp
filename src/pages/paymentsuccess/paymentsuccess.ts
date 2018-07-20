@@ -14,8 +14,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'paymentsuccess.html',
 })
 export class PaymentsuccessPage {
-
+  public Topup: number;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.Topup = navParams.data
   }
 
   ionViewDidLoad() {

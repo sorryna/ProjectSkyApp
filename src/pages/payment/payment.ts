@@ -15,15 +15,15 @@ import { ConfirmPage } from '../confirm/confirm';
   templateUrl: 'payment.html',
 })
 export class PaymentPage {
+  public Topup: number;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {   
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PaymentPage');
   }
   goConfirm(){
-    this.navCtrl.push(ConfirmPage);
+    this.navCtrl.push(ConfirmPage, this.Topup);
   }
-
 }
