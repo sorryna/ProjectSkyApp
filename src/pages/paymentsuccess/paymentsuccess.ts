@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { IndexPage } from '../index';
 
 /**
  * Generated class for the PaymentsuccessPage page.
@@ -23,7 +22,7 @@ export class PaymentsuccessPage {
     console.log('ionViewDidLoad PaymentsuccessPage');
   }
   goIndex(){
-    this.navCtrl.push(IndexPage);
+    this.navCtrl.popToRoot();
   }
 
 }
