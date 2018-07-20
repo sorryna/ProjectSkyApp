@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { TopupPage } from '../topup/topup';
 import { FilterPage } from '../filter/filter';
+import { DetailPage } from '../detail/detail';
 /**
  * Generated class for the IndexPage page.
  *
@@ -34,6 +35,9 @@ export class IndexPage {
 
   goPageTravel() {
     this.navCtrl.push(FilterPage);
+  }
+  gopage() {
+    this.navCtrl.push(DetailPage);
   }
 
 }
